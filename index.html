@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+        <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"/>
+        <link rel="stylesheet" href="stylesheets.css"/>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="header-section">
+                <h1>Gua <span>calculator</span></h1>
+                <h5>sherry Merchant</h5>
+            </div>
+            <div class="main-section">
+                <br/><br/>
+                Enter your date of birth and gender to get the kua number.
+
+                <form method="post">
+                    <input type="text" id="my_selected_Date"/>
+                    <select name="gender"> <option value="0">Male</option> <option
+                            value="1">Female</option>
+                    </select>
+                    <input name="runit" value="What Is My Kua Number" onClick="runForm(this.form)" type="button" />
+                </form>
+                <div id="kua_number"></div>
+            </div>
+            <footer>
+                <p id="copy-right">&copy; 2016 sherry merchant</p>
+                <p id="desinged-by"><a href="http://kuladeep.in">developed by kuladeep.in</a></p>
+            </footer>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+        <script src="numbergenerator4.js"></script>
+    </body>
+</html>
