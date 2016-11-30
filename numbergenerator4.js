@@ -893,7 +893,7 @@ function runForm(f) {
         alert("Your birthdate must be between Jan 30, 1930 and Feb 6, 2020.");
     } else {
 
-        document.getElementById("kua_number").innerHTML = "You are a " + ext + " born on " + d+" " + month +" "  + "<sup>th</sup> " + y + "<br/><br/> Your Gua number is " +"<span id='op_num'>" +r+"</span>";
+        document.getElementById("kua_number").innerHTML = "You are a " + ext + " born on " + d+" " + month +" " + y + "<br/><br/> Your Gua number is " +"<span id='op_num'>" +r+"</span>";
     }
 
 }
