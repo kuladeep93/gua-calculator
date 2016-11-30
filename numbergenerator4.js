@@ -851,12 +851,49 @@ function runForm(f) {
     } else {
         ext = "female";
     }
-
+    m++;
+    var month="";
+    if (m == 1) {
+         month = "January";
+    }
+    else if (m == 2) {
+         month = "February";
+    }
+    else if (m == 3) {
+         month = "March";
+    }
+    else if (m == 4) {
+         month = "April";
+    }
+    else if (m == 5) {
+         month = "May";
+    }
+    else if (m == 6) {
+         month = "June";
+    }
+    else if (m == 7) {
+         month = "July";
+    }
+    else if (m == 8) {
+         month = "August";
+    }
+    else if (m == 9) {
+         month = "September";
+    }
+    else if (m == 10) {
+         month = "October";
+    }
+    else if (m == 11) {
+         month = "November";
+    }
+    else if (m == 12) {
+         month = "December";
+    }
     if (r == 0) {
         alert("Your birthdate must be between Jan 30, 1930 and Feb 6, 2020.");
     } else {
 
-        document.getElementById("kua_number").innerHTML = "You are a " + ext +" born on "+d+"/"+m+"/"+y+"<br> Your Gua number is "+ r;
+        document.getElementById("kua_number").innerHTML = "You are a " + ext + " born on " +  month +" " + d  + "<sup>th</sup> " + y + "<br/><br/> Your Gua number is " +"<span id='op_num'>" +r+"</span>";
     }
 
 }

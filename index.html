@@ -4,6 +4,8 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous" />
         <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"/>
         <link rel="stylesheet" href="stylesheets.css"/>
 
@@ -16,7 +18,7 @@
             </div>
             <div class="main-section">
                 <br/><br/>
-                Enter your date of birth and gender to get the kua number.
+                <span class="bgclr-gray">&emsp;Enter your date of birth and gender to get the kua number.&emsp;</span>
 
                 <form method="post">
                     <input type="text" id="my_selected_Date"/>
@@ -25,7 +27,32 @@
                     </select>
                     <input name="runit" value="What Is My Kua Number" onClick="runForm(this.form)" type="button" />
                 </form>
-                <div id="kua_number"></div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <br/>
+                        <div id="kua_number"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <br/>
+                        <h4>Read more</h4>
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank">About your Gua.</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">You in November 2016.</a>
+                            </li>
+                            <li>
+                               <a href="#" target="_blank"> You in December 2016.</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p>Check here every month to know more about your Gua and the month, to know what is stored for you</p>
+                    </div>
+                </div>
             </div>
             <footer>
                 <p id="copy-right">&copy; 2016 sherry merchant</p>
@@ -34,6 +61,7 @@
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
         <script src="numbergenerator4.js"></script>
     </body>
 </html>
