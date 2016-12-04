@@ -8,24 +8,23 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous" />
         <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"/>
         <link rel="stylesheet" href="stylesheets.css"/>
-
     </head>
     <body>
         <div class="container">
             <div class="header-section">
                 <h1>Gua <span>Calculator</span></h1>
-                <h5>Sherry Merchant</h5>
+                <h4>Sherry Merchant</h4>
             </div>
             <div class="main-section">
                 <br/><br/>
                 <span class="bgclr-gray">&emsp;Enter your date of Birth and Gender to get the Gua number&emsp;</span>
 
                 <form method="post">
-                    <input type="text" id="my_selected_Date"/>
+                    <input type="text" id="my_selected_Date" placeholder="click to select date"/>
                     <select name="gender"> <option value="0">Male</option> <option
                             value="1">Female</option>
                     </select>
-                    <input name="runit" value="What Is My Gua Number" onClick="runForm(this.form)" type="button" />
+                    <input name="runit"  value="What Is My Gua Number" onClick="runForm(this.form)" type="button" />
                 </form>
                 <div class="row">
                     <div class="col-md-6">

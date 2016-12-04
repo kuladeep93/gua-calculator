@@ -29,12 +29,12 @@ body{
 }
 .header-section h1{
     padding: 30px;
-    font-size: 40px;
+    font-size: 50px;
 }
 .header-section h1 span{
     font-size: 20px;
 }
-.header-section h5{
+.header-section h4{
     position: absolute;
     right: 20px;
     bottom: 0;
@@ -50,16 +50,34 @@ body{
 }
 input{
     margin-top: 40px;
+    padding:3px;
+    font-size: 18px;
+    border-radius: 4px;
 }
-
+select{
+    padding:5px;
+    font-size: 18px;
+    border-radius: 4px;
+}
 table{
     text-align: center;
 }
 table a:hover{
     background-color: #D50000;
+    color:#fff;
 }
 #ui-datepicker-div{
     background-color: #fff;
+}
+select.ui-datepicker-month{
+    margin-right: 10px;
+}
+a.ui-datepicker-prev,a.ui-datepicker-next{
+    display: none;
+}
+.ui-datepicker-title{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 footer{
     background-color: #000;
@@ -90,4 +108,7 @@ footer #desinged-by{
     font-weight: 800;
     padding: 4px 12px;
     border: 3px solid #efefef;
+}
+a.ui-state-default{
+    padding: 6px;
 }
